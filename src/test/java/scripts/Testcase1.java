@@ -18,13 +18,11 @@ public class Testcase1 extends StepGroup
 		i.demoskillraryapp();
 		
 		SkillraryDemoLogin sd=new SkillraryDemoLogin(driver);
-		
 		driverutilies.switchTabs(driver);
 		driverutilies.mouseHover(driver,sd.getCoursetab());
 		sd.seleniumtrainingbtn();
 		
 		Addtocart ad=new Addtocart(driver);
-
 		driverutilies.doubleClick(driver,ad.getAddbtn());
 		ad.addtocartbutton();
 		driverutilies.alertpopup(driver);
